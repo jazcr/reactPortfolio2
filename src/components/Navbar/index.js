@@ -7,7 +7,9 @@ import {
     MobileIcon, 
     NavMenu, 
     NavItem, 
-    NavLinks } from './NavbarComps';
+    NavLinks,
+    NavBtn,
+    NavBtnLink } from './NavbarComps';
 
 const Navbar = () => {
     return (
@@ -32,6 +34,9 @@ const Navbar = () => {
                             <NavLinks to="contact">Contact</NavLinks>
                         </NavItem>
                     </NavMenu>
+                    <NavBtn>
+                        <NavBtnLink to="/"></NavBtnLink>
+                    </NavBtn>
                 </NavbarCon>
             </Nav>
         </>
