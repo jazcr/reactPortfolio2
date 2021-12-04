@@ -75,7 +75,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #fff;
+    color: #e4a6f7;
     display: flex;
     align-items: center;
     text-decoration: none;
