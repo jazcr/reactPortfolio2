@@ -6,33 +6,34 @@ import { Link as LinkScroll } from 'react-scroll';
 
 
 export const SidebarCon = styled.aside`
-position: fixed;
-z-index: 999;
-width: 100%;
-height: 100%;
-background: #000;
-display: grid;
-align-items: center;
-top: 0;
-left: 0;
-transition: 0.3s ease-in-out;
-top: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: grid;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+
 `
-// opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
 
 
 export const CloseIcon = styled(FaTimes)`
-color: #fff;
+    color: #fff;
 `
 
 export const Icon = styled.div`
-postition: absolute;
-top: 1.2 rem;
-right: 1.5 rem;
-background: transparent;
-font-size: 2rem;
-cursor: pointer;
-outline: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
 
 `
 
@@ -67,7 +68,7 @@ export const SidebarLink = styled(LinkScroll)`
         color: #e4a6f7;
         transition: 0.2s ease-in-out;
     }
-`
+`;
 
 export const SideBtnWrap = styled.div`
     display: flex;
