@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-
+import Jumbotron from '../components/Jumbotron';
 
 const Home = () => {
 
@@ -14,7 +14,8 @@ const Home = () => {
     return (
         <>
            <Sidebar isOpen={isOpen} toggle={toggle}/>
-           <Navbar toggle={toggle}/> 
+           <Navbar toggle={toggle}/>
+           <Jumbotron /> 
         </>
     );
 };
