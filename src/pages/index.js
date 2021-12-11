@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Jumbotron from '../components/Jumbotron';
+import InfoSection from '../components/infoSection';
 
 const Home = () => {
 
@@ -15,7 +16,8 @@ const Home = () => {
         <>
            <Sidebar isOpen={isOpen} toggle={toggle}/>
            <Navbar toggle={toggle}/>
-           <Jumbotron /> 
+           <Jumbotron />
+           <InfoSection /> 
         </>
     );
 };
