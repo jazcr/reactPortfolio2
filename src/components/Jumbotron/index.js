@@ -31,7 +31,13 @@ const Jumbotron = () => {
                 <JumboH1>Welcome</JumboH1>
                 <JumboP>Check out my recent projects</JumboP>
                 <JumboBtnWrapper>
-                    <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover}>
+                    <Button 
+                        to='signup' 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}
+                        primary='true'
+                        dark='true'
+                        >
                         View My Resume {hover ? <ArrowForward/> : <ArrowRight />}
                     </Button>
                 </JumboBtnWrapper>
