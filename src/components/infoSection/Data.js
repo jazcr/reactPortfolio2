@@ -1,0 +1,15 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: '',
+    headLine: 'My current project..',
+    description: 'I am currently working on perfecting this portfolio!',
+    buttonLabel: 'View Live App',
+    imgStart: false,
+    img: require('../../images/svgDes.svg').default,
+    alt: 'Website',
+    primary: true,
+    darkText: false,
+}

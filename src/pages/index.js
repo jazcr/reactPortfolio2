@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Jumbotron from '../components/Jumbotron';
 import InfoSection from '../components/infoSection';
-
+import { homeObjOne } from '../components/infoSection/Data';
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ const Home = () => {
            <Sidebar isOpen={isOpen} toggle={toggle}/>
            <Navbar toggle={toggle}/>
            <Jumbotron />
-           <InfoSection /> 
+           <InfoSection {...homeObjOne}/> 
         </>
     );
 };

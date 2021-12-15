@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button } from 'react-scroll';
+import { Button } from '../ButtonComp';
 import { 
-    InfoCon, 
+    InfoCon,
+    InfoRow, 
     InfoWrapper, 
     Column1, 
     Column2, 
@@ -14,26 +15,39 @@ import {
     Img } from './infoComps';
 
 
-const InfoSection = () => {
+const InfoSection = ({
+    lightBg, 
+    id,
+    imgStart, 
+    topLine, 
+    lightText, 
+    headLine, 
+    darkText, 
+    description, 
+    buttonLabel, 
+    img, 
+    alt}) => {
     return (
         <>
-            <InfoCon>
+            <InfoCon lightBg={lightBg} id={id}>
                 <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrap>
-                            <TopLine>Top</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Subtitle</Subtitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headLine}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to="home"></Button>
+                                <Button to="home">{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrap>
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img />
+                            <Img src={img} alt={alt}/>
                         </ImgWrap>
                     </Column2>
+                    </InfoRow>
                 </InfoWrapper>
             </InfoCon> 
         </>

@@ -31,7 +31,7 @@ export const NavbarCon = styled.div`
 `;
 
 export const NavLogo = styled(LinkRouter)`
-    color: #e4a6f7;
+    color: #ae9bda;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 20px;
@@ -47,7 +47,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        color: #e4a6f7;
+        color: #ae9bda;
         display: block;
         position: absolute;
         top: 0;
@@ -75,7 +75,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-    color: #e4a6f7;
+    color: #ae9bda;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -84,7 +84,7 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #e4a6f7;
+        border-bottom: 3px solid #ae9bda;
     }
 `
 
@@ -99,7 +99,7 @@ export const NavLinks = styled(LinkScroll)`
 
 // export const NavBtnLink = styled(LinkRouter)`
 //     border-radius: 50px;
-//     background: #e4a6f7;
+//     background: #ae9bda;
 //     white-space: nowrap;
 //     padding: 10px 22px;
 //     color: black;
