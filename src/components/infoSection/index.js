@@ -7,7 +7,6 @@ import {
     Column1, 
     Column2, 
     TextWrap, 
-    TopLine, 
     Heading, 
     Subtitle, 
     BtnWrap, 
@@ -19,7 +18,6 @@ const InfoSection = ({
     lightBg, 
     id,
     imgStart, 
-    topLine, 
     lightText, 
     headLine, 
     darkText, 
@@ -38,7 +36,6 @@ const InfoSection = ({
                     <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrap>
-                            <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
