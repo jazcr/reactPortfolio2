@@ -6,6 +6,8 @@ export const InfoCon = styled.div`
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
+        align-items: center;
+        justify-content: center;
     }
 `
 

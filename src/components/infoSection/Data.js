@@ -6,10 +6,11 @@ export const homeObjOne = {
     topLine: '',
     headLine: 'My current project..',
     description: 'I am currently working on perfecting this portfolio!',
-    buttonLabel: 'View Live App',
+    buttonLabel: 'View Source Code',
     imgStart: false,
     img: require('../../images/svgDes.svg').default,
     alt: 'Website',
     primary: true,
     darkText: false,
+    dark: true,
 }
