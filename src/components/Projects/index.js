@@ -6,8 +6,8 @@ import Icon3 from '../../images/svgEm.svg';
 
 const Projects = () => {
     return (
-        <div>
-            <ProjCon>
+        <>
+            <ProjCon id="projects">
                 <ProjH1>Projects</ProjH1>
                 <ProjWrap>
                     <ProjCard>
@@ -27,7 +27,7 @@ const Projects = () => {
                     </ProjCard>
                 </ProjWrap>
             </ProjCon>
-        </div>
+        </>
     )
 }
 

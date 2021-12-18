@@ -6,7 +6,7 @@ export const ProjCon = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #010106;
+    background-color: #010606;
 
     @media only screen and (max-width: 768px) {
         height: 1100px;
@@ -44,7 +44,7 @@ export const ProjCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 30px;
-    box: 0 1px 3px rgba(0, 0, 0, 0, 0.2);
+    box: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -64,7 +64,7 @@ export const ProjIcon = styled.img`
 export const ProjH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 64px;
+    margin: 20px 0;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
