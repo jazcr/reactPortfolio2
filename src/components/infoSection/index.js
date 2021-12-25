@@ -22,7 +22,8 @@ const InfoSection = ({
     headLine, 
     darkText, 
     description, 
-    buttonLabel, 
+    buttonLabel,
+    btnLink, 
     img, 
     alt,
     primary, 
@@ -39,7 +40,7 @@ const InfoSection = ({
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to="home" 
+                                <Button onClick={()=> window.open(btnLink, "_blank")}
                                 smooth={true}
                                 duration={500}
                                 spy={true}

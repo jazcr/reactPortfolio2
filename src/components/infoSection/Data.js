@@ -1,4 +1,22 @@
 export const homeObjOne = {
+    id: 'about',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'About',
+    headLine: 'A little about me..',
+    description: 'I am passionate about making the world a better place.',
+    imgStart: true,
+    img: require('../../images/headshot.png').default,
+    alt: 'Headshot',
+    buttonLabel: 'View LinkedIn',
+    btnLink: 'https://www.linkedin.com/in/jazcr/',
+    primary: false,
+    darkText: true,
+    dark: false,
+};
+
+export const homeObjTwo = {
     id: 'currentProj',
     lightBg: false,
     lightText: true,
@@ -6,6 +24,7 @@ export const homeObjOne = {
     headLine: 'My current project..',
     description: 'I am currently working on perfecting this portfolio!',
     buttonLabel: 'View Source Code',
+    btnLink: 'https://github.com/jazcr/reactPortfolio2',
     imgStart: false,
     img: require('../../images/svgDes.svg').default,
     alt: 'Website',
@@ -14,22 +33,6 @@ export const homeObjOne = {
     dark: true,
 };
 
-export const homeObjTwo = {
-    id: 'about',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'About',
-    headLine: 'A little about me..',
-    description: 'I am currently working on perfecting this portfolio!',
-    buttonLabel: 'View Source Code',
-    imgStart: true,
-    img: require('../../images/svgAbt.svg').default,
-    alt: 'Website',
-    primary: false,
-    darkText: true,
-    dark: false,
-};
 
 export const homeObjThree = {
     id: 'contact',
@@ -38,7 +41,8 @@ export const homeObjThree = {
     lightTextDesc: true,
     headLine: 'Let\'s get in touch!',
     description: 'I am currently searching for a great place to kickstart my Web Devlopment career. Let\'s see if we\'re a good fit for each other.. (;',
-    buttonLabel: 'View Source Code',
+    buttonLabel: 'Send an Email',
+    btnLink: 'mailto:jazcrudolph@gmail.com',
     imgStart: false,
     img: require('../../images/svgEm.svg').default,
     alt: 'Website',
