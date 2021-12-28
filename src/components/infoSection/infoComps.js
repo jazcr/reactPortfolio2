@@ -15,7 +15,7 @@ export const InfoWrapper = styled.div`
 
     display: grid;
     z-index: 1;
-    height: 700px;
+    height: 860px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -107,7 +107,7 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 500px;
     height: 100%;
 `
 
