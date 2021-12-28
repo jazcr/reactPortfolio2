@@ -35,7 +35,7 @@ export const ProjWrap = styled.div`
     }
 `
 
-export const ProjCard = styled.div`
+export const ProjCardFront = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,30 @@ export const ProjCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+`
+export const ProjCardBack = styled.div`
+    background: #ae9bda;
+    color: #010106;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 340px;
+    padding: 30px;
+    box: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+    }
+`
+
+export const ProjDesc = styled.h2`
+    font-size: 1rem;
+    color: #010106;
 `
 
 export const ProjIcon = styled.img`
