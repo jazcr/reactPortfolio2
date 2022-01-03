@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import { ProjCon, ProjH1, ProjWrap, ProjIcon, ProjCardFront, ProjCardBack, ProjDesc, ProjH2, ProjP} from './projectComps';
-import Icon1 from '../../images/svgAbt.svg';
-import Icon2 from '../../images/svgDes.svg';
-import Icon3 from '../../images/svgEm.svg';
+import React from 'react';
+import { ProjCon, ProjH1, ProjWrap, ProjIcon, ProjCardFront, ProjCardBack, ProjSub, ProjH2, ProjP, BackDesc, BackH1, BackP} from './projectComps';
+import Icon1 from '../../images/shopping.svg';
+import Icon2 from '../../images/alien.svg';
+import Icon3 from '../../images/happy.svg';
 import ReactCardFlip from 'react-card-flip';
 
 class Projects extends React.Component {
@@ -33,18 +33,19 @@ class Projects extends React.Component {
             <>
                 <ProjCon id="projects">
                     <ProjH1>Projects</ProjH1>
+                    <ProjSub>Each of these projects were created in a team environment.<br></br> Click on one to learn more! </ProjSub>
                     <ProjWrap>
                         <ReactCardFlip isFlipped={this.state.isFlipped.has(1)} flipDirection='horizontal'>
                             {/* PROJECT ONE */}
                             <ProjCardFront onClick={this.handleClick(1)} >
                                 <ProjIcon src={Icon1}/>
-                                <ProjH2>Belle L'jaru</ProjH2>
+                                <ProjH2>Belle L'JaRu</ProjH2>
                                 <ProjP>E-Commerce Site</ProjP>
                             </ProjCardFront>
                             <ProjCardBack onClick={this.handleClick(1)}>
-                                <ProjH2>Belle L'jaru</ProjH2>
-                                <ProjDesc>An artificial storefront for skincare products. Includes a "Skin-type Quiz" that will recommend products to you. Complete with a checkout page powered by Stripe.</ProjDesc>
-                                <ProjP>Technologies used: (MERN Stack) React.js, NodeJS, Express, MongoDB </ProjP>
+                                <BackH1>Belle L'JaRu</BackH1>
+                                <BackDesc>An artificial storefront for skincare products. Includes a "Skin-type Quiz" that will recommend products to you. Complete with a checkout page powered by Stripe.</BackDesc>
+                                <BackP>Technologies used: (MERN Stack) React.js, NodeJS, Express, MongoDB </BackP>
                             </ProjCardBack>
                         </ReactCardFlip>
 
@@ -56,9 +57,9 @@ class Projects extends React.Component {
                                 <ProjP>Description</ProjP>
                             </ProjCardFront>
                             <ProjCardBack onClick={this.handleClick(2)}>
-                                <ProjH2>Project Title222</ProjH2>
-                                <ProjDesc>Description of Project222</ProjDesc>
-                                <ProjP>Description</ProjP>
+                                <BackH1>Project Title222</BackH1>
+                                <BackDesc>Description of Project222</BackDesc>
+                                <BackP>Description</BackP>
                             </ProjCardBack>
                         </ReactCardFlip>
 
@@ -70,9 +71,9 @@ class Projects extends React.Component {
                                 <ProjP>Description</ProjP>
                             </ProjCardFront>
                             <ProjCardBack onClick={this.handleClick(3)}>
-                                <ProjH2>Project 3333</ProjH2>
-                                <ProjDesc>Description of Project333</ProjDesc>
-                                <ProjP>Description</ProjP>
+                                <BackH1>Project 3333</BackH1>
+                                <BackDesc>Description of Project333</BackDesc>
+                                <BackP>Description</BackP>
                             </ProjCardBack>
                         </ReactCardFlip>
                     </ProjWrap>
