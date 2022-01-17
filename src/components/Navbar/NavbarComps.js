@@ -112,7 +112,7 @@ export const NavLinks = styled(LinkScroll)`
 
 //     &:hover {
 //         transition: all 0.2s ease-in-out;
-//         background: #fff;
+//         background: #e6e6e6;
 //         color: #241732;
 
 //     }

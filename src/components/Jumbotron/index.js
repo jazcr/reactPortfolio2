@@ -28,8 +28,8 @@ const Jumbotron = () => {
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
             </JumboBg>
             <JumboContent>
-                <JumboH1>Welcome</JumboH1>
-                <JumboP>Check out my recent projects</JumboP>
+                <JumboH1>Jasmine Rudolph</JumboH1>
+                <JumboP>an up and coming web developer</JumboP>
                 <JumboBtnWrapper>
                     <Button 
                         to='signup' 

@@ -57,7 +57,7 @@ export const JumboContent = styled.div`
 `
 
 export const JumboH1 = styled.h1`
-    color: #fff;
+    color: #e6e6e6;
     font-size: 48px;
     text-align: center;
 
@@ -72,10 +72,11 @@ export const JumboH1 = styled.h1`
 
 export const JumboP = styled.p`
     margin-top: 24px;
-    color: #fff;
+    color: #e6e6e6;
     font-size: 24px;
     text-align: center;
     max-width: 600px;
+    font-style: italic;
 
     @media screen and (max-width: 768px) {
         font-size: 24px;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const InfoCon = styled.div`
-    color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010106')};
+    color: #e6e6e6;
+    background: ${({lightBg}) => (lightBg ? '#e6e6e6' : '#010106')};
 
     @media screen and (max-width: 768px) {
         padding: 50px 0;
@@ -87,7 +87,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#010106' : '#fff')};
+    color: ${({ darkText }) => (darkText ? '#010106' : '#e6e6e6')};
 
     @media screen and (max-width: 768px) {
         padding-bottom: 5px;
