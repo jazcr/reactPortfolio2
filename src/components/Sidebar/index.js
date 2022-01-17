@@ -1,4 +1,5 @@
 import React from 'react'
+import Resume from '../../images/Resume.pdf';
 import { 
     SidebarCon, 
     Icon, 
@@ -23,11 +24,12 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="contact" onClick={toggle} >Contact</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/resume">View Resume</SidebarRoute>
+                    <SidebarRoute href={Resume} target='_blank' rel='noopener noreferrer'>View Resume</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarCon>
     )
 }
 
+// <a href='/api/v1/print/example.pdf' target='_blank' rel='noopener noreferrer'>
 export default Sidebar;

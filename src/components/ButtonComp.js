@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const Button = styled.a`
     border-radius: 50px;
     background: ${({primary}) => (primary ? '#ae9bda' : '#010106')};
     white-space: nowrap;
@@ -8,6 +8,7 @@ export const Button = styled.button`
     color: ${({dark}) => (dark ? '#010106' : '#e6e6e6')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
+    text-decoration: none;
     border: none;
     cursor: pointer;
     display: flex;

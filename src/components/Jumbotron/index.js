@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
+import Resume from '../../images/Resume.pdf';
 import { Button } from '../ButtonComp';
 import { 
     JumboContainer,
@@ -32,7 +33,7 @@ const Jumbotron = () => {
                 <JumboP>an up and coming web developer</JumboP>
                 <JumboBtnWrapper>
                     <Button 
-                        to='signup' 
+                        href={Resume} target='_blank' rel='noopener noreferrer' 
                         onMouseEnter={onHover} 
                         onMouseLeave={onHover}
                         primary='true'
